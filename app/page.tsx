@@ -1,0 +1,26 @@
+import { HeroSection } from '@/components/sections/home/hero-section';
+import { FeaturedProjectsSection } from '@/components/sections/home/featured-projects-section';
+import { QuickStatsSection } from '@/components/sections/home/quick-stats-section';
+import { personalInfo } from '@/data/personal';
+import { projects } from '@/data/projects';
+
+const featuredProjects = projects.filter((p) => p.featured).slice(0, 3);
+
+export default function HomePage() {
+  const stats = [
+    { title: '3', description: 'Năm kinh nghiệm' },
+    {
+      title: `${projects.length}+`,
+      description: 'Dự án đã hoàn thành',
+    },
+    { title: '100%', description: 'Cam kết chất lượng' },
+  ];
+
+  return (
+    <div className="container mx-auto px-4 py-12 space-y-16">
+      <HeroSection personalInfo={personalInfo} />
+      <FeaturedProjectsSection projects={featuredProjects} />
+      <QuickStatsSection stats={stats} />
+    </div>
+  );
+}
