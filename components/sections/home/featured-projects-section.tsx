@@ -25,14 +25,14 @@ export function FeaturedProjectsSection({
         transition={{ duration: 0.5 }}
       >
         <div>
-          <h2 className="text-3xl md:text-4xl font-bold">Dự án nổi bật</h2>
+          <h2 className="text-3xl md:text-4xl font-bold">Featured projects</h2>
           <p className="text-muted-foreground mt-2">
-            Một số dự án tôi đã thực hiện
+            A few projects I&apos;ve built
           </p>
         </div>
         <Button asChild variant="outline">
           <Link href="/projects">
-            Xem tất cả <ArrowRight className="ml-2 h-4 w-4" />
+            View all <ArrowRight className="ml-2 h-4 w-4" />
           </Link>
         </Button>
       </motion.div>

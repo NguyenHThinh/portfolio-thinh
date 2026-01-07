@@ -14,11 +14,11 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: '1',
-    title: 'Web nghe nhạc',
+    title: 'Music Streaming Web App',
     description:
-      'Giao diện web nghe nhạc đa nền tảng (Hiện server backend đã đóng)',
+      'Cross-platform music streaming web UI (backend server currently offline)',
     longDescription:
-      'Đồ án tốt nghiệp với team 3 người, chịu trách nhiệm chính phần frontend: xây dựng toàn bộ UI, kiểm thử giao diện và API, làm việc với dữ liệu do backend trả về.',
+      'Graduation project with a 3-person team. I owned the frontend: built the entire UI, tested UI and APIs, and integrated with backend data.',
     image: '/images/projects/spotify-client.png',
     technologies: ['HTML', 'CSS', 'ReactJS', 'RESTful API', 'Postman'],
     demoUrl: 'https://spotify-client-ten.vercel.app/',
@@ -29,9 +29,9 @@ export const projects: Project[] = [
   {
     id: '2',
     title: 'RIKSOFT website',
-    description: 'Website công ty RIKSOFT',
+    description: 'RIKSOFT company website',
     longDescription:
-      'Thực hiện xây dựng website với Next.js App Router, xử lý logic, sự kiện, custom component và tích hợp API backend. Đảm nhiệm luôn khâu kiểm thử và sửa lỗi.',
+      'Built the website with Next.js Page Router, handled logic, events, custom components, and integrated backend APIs. Also took care of testing and bug fixes.',
     image: '/images/projects/riksoft.png',
     technologies: [
       'Next.js (Page Router)',
@@ -50,9 +50,9 @@ export const projects: Project[] = [
   {
     id: '3',
     title: 'VietSearch Business',
-    description: 'Website tìm kiếm thông tin doanh nghiệp VietSearch',
+    description: 'Business information search website for VietSearch',
     longDescription:
-      'Dự án: xây dựng website với Next.js App Router, xử lý logic, form, custom component, kết nối API backend và đảm bảo kiểm thử liên tục trong quá trình phát triển.',
+      'Built the site with Next.js App Router; handled logic, forms, custom components, connected to backend APIs, and ensured continuous testing during development.',
     image: '/images/projects/vietsearch.png',
     technologies: [
       'Next.js (App Router)',
@@ -76,7 +76,7 @@ export const projects: Project[] = [
     title: 'Landing page Treasure Hunters',
     description: 'Landing page for game Treasure Hunters with Nuxt 3',
     longDescription:
-      'Dự án: xây dựng landing page với Nuxt 3, xử lý animation, responsive, multiple language, html, css, javascript theo yêu cầu của khách hàng.',
+      'Built a Nuxt 3 landing page, handling animations, responsiveness, multiple languages, HTML, CSS, and JavaScript per client requirements.',
     image: '/images/projects/treasure-hunters.png',
     technologies: ['Nuxt 3', 'HTML', 'CSS', 'JavaScript', 'i18next'],
     demoUrl: 'https://daovang.vercel.app/',
@@ -89,7 +89,7 @@ export const projects: Project[] = [
     title: 'Landing page GG Lab',
     description: 'Landing page for game GG Lab with Nuxt 3',
     longDescription:
-      'Dự án: xây dựng landing page với Nuxt 3, xử lý animation, responsive, multiple language, html, css, javascript theo yêu cầu của khách hàng.',
+      'Built a Nuxt 3 landing page, implementing animations, responsiveness, multiple languages, HTML, CSS, and JavaScript per client requirements.',
     image: '/images/projects/gglab.png',
     technologies: ['Nuxt 3', 'HTML', 'CSS', 'TypeScript', 'i18next'],
     demoUrl: 'https://pylon-web-silk.vercel.app/',
@@ -102,7 +102,7 @@ export const projects: Project[] = [
     title: 'Landing page',
     description: 'Landing page with Nuxt 3',
     longDescription:
-      'Dự án: xây dựng landing page với Nuxt 3, xử lý animation, responsive, multiple language, HTML, CSS, TypeScript.',
+      'Built a Nuxt 3 landing page, delivering animations, responsiveness, multiple languages, HTML, CSS, and TypeScript.',
     image: '/images/projects/custom1.png',
     technologies: [
       'Nuxt 3',

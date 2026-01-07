@@ -27,9 +27,9 @@ export function ContactInfoCard({ personalInfo }: ContactInfoCardProps) {
     >
       <Card>
         <CardHeader>
-          <CardTitle>Thông tin liên hệ</CardTitle>
+          <CardTitle>Contact information</CardTitle>
           <CardDescription>
-            Bạn có thể liên hệ với tôi qua các kênh sau
+            You can reach me through the channels below
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-4">
@@ -38,7 +38,7 @@ export function ContactInfoCard({ personalInfo }: ContactInfoCardProps) {
               <Mail className="h-5 w-5 text-primary" />
             </div>
             <div>
-              <p className="font-medium">Email</p>
+            <p className="font-medium">Email</p>
               <a
                 href={`mailto:${personalInfo.email}`}
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -48,7 +48,7 @@ export function ContactInfoCard({ personalInfo }: ContactInfoCardProps) {
             </div>
           </div>
           <div className="pt-4">
-            <p className="font-medium mb-4">Mạng xã hội</p>
+          <p className="font-medium mb-4">Social</p>
             <SocialLinks links={personalInfo.socialLinks} />
           </div>
         </CardContent>

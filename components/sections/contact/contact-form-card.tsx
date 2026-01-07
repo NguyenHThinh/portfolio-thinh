@@ -41,7 +41,9 @@ export function ContactFormCard() {
     console.log('Form submitted:', formData);
     setFormData({ name: '', email: '', subject: '', message: '' });
     setIsSubmitting(false);
-    alert('Cảm ơn bạn đã liên hệ! Tôi sẽ phản hồi sớm nhất có thể.');
+    alert(
+      'Thanks for reaching out! I will get back to you as soon as possible.'
+    );
   };
 
   return (
@@ -52,22 +54,22 @@ export function ContactFormCard() {
     >
       <Card>
         <CardHeader>
-          <CardTitle>Gửi tin nhắn</CardTitle>
+          <CardTitle>Send a message</CardTitle>
           <CardDescription>
-            Điền form bên dưới để gửi tin nhắn cho tôi
+            Fill out the form below to send me a message
           </CardDescription>
         </CardHeader>
         <CardContent>
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="space-y-2">
-              <Label htmlFor="name">Họ tên</Label>
+              <Label htmlFor="name">Full name</Label>
               <Input
                 id="name"
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
                 required
-                placeholder="Nhập họ tên của bạn"
+                placeholder="Enter your full name"
               />
             </div>
             <div className="space-y-2">
@@ -83,18 +85,18 @@ export function ContactFormCard() {
               />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="subject">Chủ đề</Label>
+              <Label htmlFor="subject">Subject</Label>
               <Input
                 id="subject"
                 name="subject"
                 value={formData.subject}
                 onChange={handleChange}
                 required
-                placeholder="Chủ đề tin nhắn"
+                placeholder="Message subject"
               />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="message">Tin nhắn</Label>
+              <Label htmlFor="message">Message</Label>
               <Textarea
                 id="message"
                 name="message"
@@ -102,16 +104,16 @@ export function ContactFormCard() {
                 onChange={handleChange}
                 required
                 rows={6}
-                placeholder="Nhập tin nhắn của bạn..."
+                placeholder="Enter your message..."
               />
             </div>
             <Button type="submit" className="w-full" disabled={isSubmitting}>
               {isSubmitting ? (
-                'Đang gửi...'
+                'Sending...'
               ) : (
                 <>
                   <Send className="mr-2 h-4 w-4" />
-                  Gửi tin nhắn
+                  Send message
                 </>
               )}
             </Button>

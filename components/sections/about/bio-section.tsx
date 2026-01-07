@@ -17,7 +17,7 @@ export function BioSection({ personalInfo }: BioSectionProps) {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <h1 className="text-4xl md:text-5xl font-bold">Giới thiệu</h1>
+      <h1 className="text-4xl md:text-5xl font-bold">About</h1>
       <div className="space-y-4 text-lg text-muted-foreground">
         <p>{personalInfo.bio}</p>
         <div className="flex flex-wrap gap-6 pt-4">

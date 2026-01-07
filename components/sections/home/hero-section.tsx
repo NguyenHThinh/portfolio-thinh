@@ -27,8 +27,7 @@ export function HeroSection({ personalInfo }: HeroSectionProps) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          Xin chào, tôi là{' '}
-          <span className="text-primary">{personalInfo.name}</span>
+          Hi, I&apos;m <span className="text-primary">{personalInfo.name}</span>
         </motion.h1>
         <motion.p
           className="text-xl md:text-2xl text-muted-foreground"
@@ -54,14 +53,14 @@ export function HeroSection({ personalInfo }: HeroSectionProps) {
         >
           <Button asChild size="lg">
             <Link href="/projects">
-              Xem dự án <ArrowRight className="ml-2 h-4 w-4" />
+              View projects <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
           </Button>
           <Button asChild variant="secondary" size="lg">
-            <Link href="/about">Thông tin</Link>
+            <Link href="/about">About</Link>
           </Button>
           <Button asChild variant="outline" size="lg">
-            <Link href="/contact">Liên hệ</Link>
+            <Link href="/contact">Contact</Link>
           </Button>
         </motion.div>
         <motion.div
@@ -79,7 +78,7 @@ export function HeroSection({ personalInfo }: HeroSectionProps) {
         transition={{ duration: 0.5, delay: 0.3 }}
       >
         <div className="relative w-80 h-80 md:w-96 md:h-96 flex items-center justify-center">
-          {/* Blob ngoài cùng - quay và biến đổi hình dạng với avatar bên trong */}
+          {/* Outer blob rotates and morphs with the avatar inside */}
           <motion.div
             className="relative w-full h-full overflow-hidden"
             animate={{

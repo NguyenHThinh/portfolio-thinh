@@ -62,7 +62,9 @@ export function ProjectCard({ project, index = 0 }: ProjectCardProps) {
           {renderImage(project)}
         </div>
         <CardHeader>
-          <CardTitle className="line-clamp-1">{project.title}</CardTitle>
+          <CardTitle className="line-clamp-1 leading-5">
+            {project.title}
+          </CardTitle>
           <CardDescription className="line-clamp-2">
             {project.description}
           </CardDescription>

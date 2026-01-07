@@ -1,8 +1,8 @@
 export const personalInfo = {
   name: 'Nguyễn Hữu Thịnh',
   title: 'Frontend Developer',
-  bio: 'Tôi là Frontend Developer với gần 3 năm kinh nghiệm phát triển các sản phẩm web thực tế. Tôi đã làm việc với React/Next, Nuxt3, có kinh nghiệm xây dựng giao diện từ design, SEO, và đảm bảo trải nghiệm trên nhiều thiết bị. Tôi đã tham gia và hoàn thành nhiều dự án thực tế, có khả năng làm việc độc lập cũng như phối hợp tốt với backend và product team. Mục tiêu của tôi là trở thành một Frontend Engineer vững về nền tảng, mạnh về thực chiến, không chỉ viết UI mà còn hiểu kiến trúc, performance và trải nghiệm người dùng, từ đó tạo ra các sản phẩm có giá trị lâu dài cho doanh nghiệp.',
-  location: 'Đà Nẵng, Việt Nam',
+  bio: 'I am a Frontend Developer with nearly 3 years of experience delivering production web products. I work with React/Next and Nuxt 3, experienced in building UI from designs, SEO, and ensuring great experiences across devices. I have shipped many real-world projects, can work independently, and collaborate smoothly with backend and product teams. My goal is to become a frontend engineer with strong fundamentals and hands-on skills, understanding architecture, performance, and user experience to create products that bring lasting value to businesses.',
+  location: 'Da Nang, Vietnam',
   email: 'nguyenhthinh0203@gmail.com',
   avatar: '/avatar.jpg',
   socialLinks: {

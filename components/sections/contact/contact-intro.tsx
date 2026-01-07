@@ -10,10 +10,10 @@ export function ContactIntro() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <h1 className="text-4xl md:text-5xl font-bold">Liên hệ</h1>
+      <h1 className="text-4xl md:text-5xl font-bold">Contact</h1>
       <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-        Có dự án thú vị? Hãy liên hệ với tôi! Tôi luôn sẵn sàng lắng nghe và hợp
-        tác.
+        Have an interesting project? Let&apos;s talk! I&apos;m always ready to
+        listen and collaborate.
       </p>
     </motion.div>
   );

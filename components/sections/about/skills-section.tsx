@@ -8,8 +8,8 @@ import type { Skill } from '@/data/skills';
 const skillCategories = {
   frontend: 'Frontend',
   backend: 'Backend',
-  tools: 'Công cụ',
-  other: 'Khác',
+  tools: 'Tools',
+  other: 'Other',
 };
 
 interface SkillsSectionProps {
@@ -37,7 +37,7 @@ export function SkillsSection({ skills }: SkillsSectionProps) {
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
       >
-        Kỹ năng
+        Skills
       </motion.h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {Object.entries(skillsByCategory).map(

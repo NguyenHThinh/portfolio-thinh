@@ -26,7 +26,7 @@ export function TimelineSection({ items }: TimelineSectionProps) {
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
       >
-        Hành trình
+        Journey
       </motion.h2>
       <div className="space-y-6">
         {items.map((item, index) => (

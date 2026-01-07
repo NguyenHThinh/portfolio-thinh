@@ -8,12 +8,12 @@ const featuredProjects = projects.filter((p) => p.featured).slice(0, 3);
 
 export default function HomePage() {
   const stats = [
-    { title: '3', description: 'Năm kinh nghiệm' },
+    { title: '3', description: 'Years of experience' },
     {
       title: `${projects.length}+`,
-      description: 'Dự án đã hoàn thành',
+      description: 'Projects delivered',
     },
-    { title: '100%', description: 'Cam kết chất lượng' },
+    { title: '100%', description: 'Quality commitment' },
   ];
 
   return (
