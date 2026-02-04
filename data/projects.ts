@@ -7,6 +7,7 @@ export interface Project {
   technologies: string[];
   demoUrl?: string;
   sourceUrl?: string;
+  sourceUrlBE?: string;
   featured: boolean;
   year: number;
 }
@@ -14,22 +15,30 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: '1',
-    title: 'Music Streaming Web App',
-    description:
-      'Cross-platform music streaming web UI (backend server currently offline)',
+    title: 'Student Helper Website',
+    description: 'Fullstack website to support students',
     longDescription:
-      'Graduation project with a 3-person team. I owned the frontend: built the entire UI, tested UI and APIs, and integrated with backend data.',
-    image: '/images/projects/spotify-client.png',
-    technologies: ['HTML', 'CSS', 'ReactJS', 'RESTful API', 'Postman'],
-    demoUrl: 'https://spotify-client-ten.vercel.app/',
-    sourceUrl: 'https://github.com/gitThinh/spotify-client',
+      'Website to support students with timetable management, an AI chatbot, responsive design and smooth user experience. With 15+ endpoints, JWT, CORS, MongoDB Atlas, and more.',
+    image: '/images/projects/student-helper.png',
+    technologies: [
+      'Next.js',
+      'Express.js',
+      'MongoDB',
+      'docker',
+      'TailwindCSS',
+      'Gemini API',
+      'TypeScript',
+    ],
+    demoUrl: 'https://student-helper-five-self.vercel.app/',
+    sourceUrl: 'https://github.com/NguyenHThinh/StudentHelper',
+    sourceUrlBE: 'https://github.com/NguyenHThinh/BEHelper',
     featured: true,
-    year: 2023,
+    year: 2026,
   },
   {
     id: '2',
-    title: 'RIKSOFT website',
-    description: 'RIKSOFT company website',
+    title: 'RIKSOFT Company Website',
+    description: 'Company website for RIKSOFT',
     longDescription:
       'Built the website with Next.js Page Router, handled logic, events, custom components, and integrated backend APIs. Also took care of testing and bug fixes.',
     image: '/images/projects/riksoft.png',
@@ -82,7 +91,7 @@ export const projects: Project[] = [
     demoUrl: 'https://daovang.vercel.app/',
     sourceUrl: 'https://github.com/NguyenHThinh/daovang',
     featured: true,
-    year: 2024,
+    year: 2025,
   },
   {
     id: '5',
@@ -95,7 +104,7 @@ export const projects: Project[] = [
     demoUrl: 'https://pylon-web-silk.vercel.app/',
     sourceUrl: 'https://github.com/NguyenHThinh/pylon_web',
     featured: true,
-    year: 2024,
+    year: 2025,
   },
   {
     id: '6',
@@ -116,5 +125,19 @@ export const projects: Project[] = [
     sourceUrl: 'https://github.com/NguyenHThinh/TemaTest/',
     featured: true,
     year: 2025,
+  },
+  {
+    id: '7',
+    title: 'Music Streaming Web App',
+    description:
+      'Cross-platform music streaming web UI (backend server currently offline)',
+    longDescription:
+      'Graduation project with a 3-person team. I owned the frontend: built the entire UI, tested UI and APIs, and integrated with backend data.',
+    image: '/images/projects/spotify-client.png',
+    technologies: ['HTML', 'CSS', 'ReactJS', 'RESTful API', 'Postman'],
+    demoUrl: 'https://spotify-client-ten.vercel.app/',
+    sourceUrl: 'https://github.com/gitThinh/spotify-client',
+    featured: true,
+    year: 2023,
   },
 ];

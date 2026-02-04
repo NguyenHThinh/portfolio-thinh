@@ -107,7 +107,19 @@ export function ProjectCard({ project, index = 0 }: ProjectCardProps) {
                 rel="noopener noreferrer"
               >
                 <Github className="mr-2 h-4 w-4" />
-                Source
+                {project.sourceUrlBE ? 'Source FE' : 'Source'}
+              </Link>
+            </Button>
+          )}
+          {project.sourceUrlBE && (
+            <Button asChild variant="outline" size="sm" className="flex-1">
+              <Link
+                href={project.sourceUrlBE}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Github className="mr-2 h-4 w-4" />
+                Source BE
               </Link>
             </Button>
           )}
