@@ -96,7 +96,7 @@ export function Navigation() {
               <SheetHeader>
                 <SheetTitle>Menu</SheetTitle>
               </SheetHeader>
-              <div className="mt-8 flex flex-col gap-4">
+              <div className="px-4 md:px-0 mt-8 flex flex-col gap-4">
                 {navItems.map((item) => (
                   <Link
                     key={item.href}

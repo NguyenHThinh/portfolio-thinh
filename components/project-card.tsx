@@ -107,7 +107,12 @@ export function ProjectCard({ project, index = 0 }: ProjectCardProps) {
                 rel="noopener noreferrer"
               >
                 <Github className="mr-2 h-4 w-4" />
-                {project.sourceUrlBE ? 'Source FE' : 'Source'}
+                <span className="hidden md:block">
+                  {project.sourceUrlBE ? 'Source FE' : 'Source'}
+                </span>
+                <span className="block md:hidden">
+                  {project.sourceUrlBE ? 'FE' : 'Source'}
+                </span>
               </Link>
             </Button>
           )}
@@ -119,7 +124,8 @@ export function ProjectCard({ project, index = 0 }: ProjectCardProps) {
                 rel="noopener noreferrer"
               >
                 <Github className="mr-2 h-4 w-4" />
-                Source BE
+                <span className="hidden md:block">Source BE</span>
+                <span className="block md:hidden">BE</span>
               </Link>
             </Button>
           )}
